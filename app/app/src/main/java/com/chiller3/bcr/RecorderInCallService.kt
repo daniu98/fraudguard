@@ -37,7 +37,7 @@ class RecorderInCallService : InCallService(), RecorderThread.OnRecordingComplet
      */
     private val foregroundNotificationId by lazy {
         prefs.nextNotificationId
-    }
+    }   
 
     /**
      * Notification IDs and their associated recorders. This indicates the desired state of the

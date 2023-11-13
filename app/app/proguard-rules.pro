@@ -20,7 +20,7 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
-# Disable obfuscation completely for BCR. As an open source project,
+# Disable obfuscation completely for FraudGuard. As an open source project,
 # shrinking is the only goal of minification.
 -dontobfuscate
 

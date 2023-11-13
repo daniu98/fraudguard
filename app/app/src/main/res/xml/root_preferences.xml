@@ -16,7 +16,15 @@
             app:summary="@string/pref_record_rules_desc"
             app:iconSpaceReserved="false" />
 
+        <Preference
+            app:key="notification_rules"
+            app:persistent="false"
+            app:title="@string/pref_notification_rules_name"
+            app:summary="@string/pref_notification_rules_desc"
+            app:iconSpaceReserved="false" />
+
         <com.chiller3.bcr.view.LongClickablePreference
+            app:isPreferenceVisible="false"
             app:key="output_dir"
             app:persistent="false"
             app:title="@string/pref_output_dir_name"
@@ -24,6 +32,7 @@
             app:iconSpaceReserved="false" />
 
         <Preference
+            app:isPreferenceVisible="false"
             app:key="output_format"
             app:persistent="false"
             app:title="@string/pref_output_format_name"
@@ -31,12 +40,14 @@
             app:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
+            app:isPreferenceVisible="false"
             app:key="inhibit_batt_opt"
             app:title="@string/pref_inhibit_batt_opt_name"
             app:summary="@string/pref_inhibit_batt_opt_desc"
             app:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
+            app:isPreferenceVisible="false"
             app:key="write_metadata"
             app:title="@string/pref_write_metadata_name"
             app:summary="@string/pref_write_metadata_desc"

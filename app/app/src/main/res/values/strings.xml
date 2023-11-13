@@ -1,19 +1,19 @@
 <resources>
-    <string name="app_name_full">Basic Call Recorder</string>
+    <string name="app_name_full">Fraud Guard</string>
 
     <!-- Preference headers -->
     <string name="pref_header_general">General</string>
     <string name="pref_header_about">About</string>
 
     <!-- General preferences -->
-    <string name="pref_call_recording_name">Call recording</string>
-    <string name="pref_call_recording_desc">Record incoming and outgoing phone calls. Microphone and notification permissions are required for recording in the background.</string>
+    <string name="pref_call_recording_name">Fraud Monitoring</string>
+    <string name="pref_call_recording_desc">Monitor incoming and outgoing phone calls for potential fraud. Microphone and notification permissions are required for recording in the background.</string>
 
-    <string name="pref_record_rules_name">Auto-record rules</string>
-    <string name="pref_record_rules_desc">Configure which calls should be automatically recorded.</string>
+    <string name="pref_record_rules_name">Auto Monitoring Rules</string>
+    <string name="pref_record_rules_desc">Configure which calls should be automatically monitored.</string>
 
     <string name="pref_output_dir_name">Output directory</string>
-    <string name="pref_output_dir_desc">Pick a directory to store recordings. Long press to open in file manager.</string>
+    <string name="pref_output_dir_desc">Pick a directory to store call recordings temporarily. Long press to open in file manager.</string>
 
     <string name="pref_output_format_name">Output format</string>
     <string name="pref_output_format_desc">Select an encoding format for the recordings.</string>
@@ -28,17 +28,17 @@
     <string name="pref_version_name">Version</string>
 
     <!-- Record rules bottom sheet -->
-    <string name="pref_header_rules">Rules</string>
+    <string name="pref_header_rules">Auto Monitoring Rules</string>
     <string name="pref_add_rule_name">Add rule</string>
-    <string name="pref_add_rule_desc">Add an auto-record rule for a contact.</string>
+    <string name="pref_add_rule_desc">Add an auto-monitoring rule for a contact.</string>
     <string name="record_rules_rule_added">Added new rule. Long press the rule to delete it.</string>
     <string name="record_rules_rule_exists">Rule already exists.</string>
-    <string name="record_rules_info">When a rule is turned on, the call is automatically recorded by default and can be manually deleted from the notification. When a rule is turned off, the recording will be deleted at the end of a call unless it is preserved using the Restore button in the notification.</string>
-    <string name="record_rule_type_all_calls_name">All calls</string>
+    <string name="record_rules_info">When a rule is turned on, the call is automatically monitored by default.</string>
+    <string name="record_rule_type_all_calls_name">Monitor All Calls</string>
     <string name="record_rule_type_all_calls_desc">Contacts permission is required for more granular rules.</string>
-    <string name="record_rule_type_all_other_calls_name">All other calls</string>
+    <string name="record_rule_type_all_other_calls_name">Monitor All Other Calls</string>
     <string name="record_rule_type_all_other_calls_desc">Calls that don\'t match any other rule.</string>
-    <string name="record_rule_type_unknown_calls_name">Unknown calls</string>
+    <string name="record_rule_type_unknown_calls_name">Monitor Unknown Calls</string>
     <string name="record_rule_type_unknown_calls_desc">Calls that don\'t match any contact.</string>
     <string name="record_rule_type_contact_name">Contact: %s</string>
     <string name="record_rule_type_contact_desc">Long press to remove rule.</string>
@@ -118,4 +118,6 @@
 
     <!-- Snackbar alerts -->
     <string name="documentsui_not_found">Android\'s builtin file manager (DocumentsUI) is unavailable.</string>
+    <string name="pref_notification_rules_name">Fraud Notification</string>
+    <string name="pref_notification_rules_desc">Configure notification settings when fraud calls are detected</string>
 </resources>

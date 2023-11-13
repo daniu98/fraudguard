@@ -95,12 +95,12 @@ fun getVersionName(git: Git, triple: VersionTriple): String {
     }
 }
 
-val git = Git.open(File(rootDir, ".git"))!!
+val git = Git.open(File(rootDir, "../.git"))!!
 val gitVersionTriple = describeVersion(git)
 val gitVersionCode = getVersionCode(gitVersionTriple)
 val gitVersionName = getVersionName(git, gitVersionTriple)
 
-val projectUrl = "https://github.com/chenxiaolong/BCR"
+val projectUrl = "https://github.com/daniu98/fradguard"
 val releaseMetadataBranch = "master"
 
 val extraDir = layout.buildDirectory.map { it.dir("extra") }
@@ -265,8 +265,8 @@ android.applicationVariants.all {
             props["name"] = rootProject.name
             props["version"] = "v${variant.versionName}"
             props["versionCode"] = variant.versionCode.toString()
-            props["author"] = "chenxiaolong"
-            props["description"] = "Basic Call Recorder"
+            props["author"] = "Daniu98"
+            props["description"] = "Fraud Guard"
 
             if (variant.name == "release") {
                 props["updateJson"] = "${projectUrl}/raw/${releaseMetadataBranch}/app/magisk/updates/${variant.name}/info.json"
